@@ -1,0 +1,19 @@
+#include "BUZZER.h"
+
+
+void BUZZER_init()
+{
+ DIO_SetPinDir(BUZZER_PORT, BUZZER_PIN, DIO_PIN_OUTPUT);
+
+}
+
+void BUZZER_START()
+{
+	DIO_SetPinVal(BUZZER_PORT, BUZZER_PIN, DIO_PIN_HIGH);
+}
+
+void BUZZER_STOP()
+{
+	DIO_SetPinVal(BUZZER_PORT, BUZZER_PIN, DIO_PIN_LOW);
+
+}

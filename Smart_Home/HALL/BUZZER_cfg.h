@@ -1,0 +1,9 @@
+#ifndef HALL_BUZZER_CFG_H_
+#define HALL_BUZZER_CFG_H_
+
+#define BUZZER_PORT DIO_PORTA
+
+#define BUZZER_PIN DIO_PIN1
+
+
+#endif /* HALL_BUZZER_CFG_H_ */

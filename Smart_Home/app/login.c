@@ -1,6 +1,4 @@
 #include "login.h"
-uint8 admin_name[]={'2','2','9','9'};
-uint8 admin_pass[]={'0','0','0','0'};
 
 
 uint8 login()
@@ -186,12 +184,12 @@ LCD_Init();
 	for(int i=0 ;i< user_limit ;)
 	{
 		uint8 letter =get_char();
-		//_delay_ms(20);
-		if(letter!='m'){
-		LCD_WriteChar(letter);
-		name1[i]=letter;
-		i++;
-		}
+				_delay_ms(200);
+				if(letter!='m'){
+				LCD_WriteChar(letter);
+				name1[i]=letter;
+				i++;
+				}
 	}
 
 
@@ -201,11 +199,11 @@ LCD_Init();
     for(int i=0 ;i<pass_limit;)
     {
     	uint8 letter =get_char();
-    	//_delay_ms(20);
-    	if(letter!='m'){
-    	LCD_WriteChar(letter);
-    	pass[i]=letter;
-    	i++;
+    	    	_delay_ms(200);
+    	    	if(letter!='m'){
+    	    	LCD_WriteChar(letter);
+    	    	pass[i]=letter;
+    	    	i++;
 
        }
     }

@@ -11,14 +11,13 @@
 #include "app/menu.h"
 #include "MCAL/TIMER.h"
 #include "MCAL/EXT_INTERRUPT.h"
-//#include <avr/interrupt.h>
 #include "MCAL/UART.h"
 
 
-
+/*
 #define user_limit 4
 #define pass_limit 4
-
+*/
 uint16 x;
 
 

@@ -244,6 +244,7 @@ void leds()
 						LCD_Init();
 						LCD_WriteString("done 50%");
 						LCD_Init();
+						return;
 						break;
 					}
 					case('2'):
@@ -253,7 +254,7 @@ void leds()
 						LCD_Init();
 						LCD_WriteString("done 100%");
 						LCD_Init();
-						break;
+						return;
 						break; }
 					default:y=-1;
 
